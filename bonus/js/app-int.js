@@ -1,4 +1,4 @@
-
+/// intermedio: utente sceglie numero massimo e le 3 parole da stampare
 let maxNumber = 0; 
 let maxNumberIsANumber;
 
@@ -43,8 +43,3 @@ do {
     }
 
 } while (!maxNumberIsANumber)
-
-
-
-
-
