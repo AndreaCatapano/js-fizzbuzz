@@ -12,7 +12,7 @@
 
 ### Soluzione 
 
-- Per ogni numero da 1 (indice) a 100 limite
+- Per ogni numero da 1 (indice) a 100 (condizione)
   - SE l'indice è un numero divisibile per 3 e 5 
     - Stampa "BUZZFIZZ"
   - ALTRIMENTI SE l'indice un numero divisibile per 5 
