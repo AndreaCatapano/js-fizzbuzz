@@ -2,7 +2,6 @@
 let maxNumber = 0; 
 let maxNumberIsANumber;
 
-console.log(maxNumber)
 
 do {
     maxNumber = parseInt(prompt("Fino a che numero?"));

@@ -6,8 +6,6 @@ let maxNumberIsANumber;
 
 let dividerIsValid;
 
-    console.log(maxNumber)
-
 do {
     maxNumber = parseInt(prompt("Fino a che numero?"));
 
@@ -16,10 +14,17 @@ do {
 
         do {
             const userInput = prompt("Scrivi i multipli tra 3, 5 e 15 (anche più di una scelta")
-            const checkInputFor3 = userInput.includes(3)
-            const checkInputFor5 = userInput.includes(5)
-            const checkInputFor15 = userInput.includes(15)
-            if (checkInputFor3 || checkInputFor5 || checkInputFor15) {
+
+            const regex3 = /\b(3)\b/;
+            const regex5 = /\b(5)\b/;
+            const regex15 = /\b(15)\b/;
+            const checkInputFor3 = regex3.test(userInput);
+            const checkInputFor5 = regex5.test(userInput);
+            const checkInputFor15 = regex15.test(userInput);
+
+            const checkInput = checkInputFor3 || checkInputFor5 || checkInputFor15;
+
+            if ((checkInput)) {
 
                 for (let i = 1; i <= maxNumber; i++) {   //Per ogni numero da 1 (indice) a 100 (condizione)
 
